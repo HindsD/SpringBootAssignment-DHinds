@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step One</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<div class="mid">
+    <h2>Step One</h2>
+    <h3>Workout Consistently</h3>
+
+    <img class="left" th:src="@{/img/Calendar.jpg}" alt="Calendar">
+
+    <p>
+        Getting fit starts with committing to working out. It’s imperative that you create a schedule for working out
+        that you stick to. You won’t make any progress overnight, and unfortunately, a lot of people become discouraged
+        if they aren’t seeing any results initially.
+    </p>
+    <p>
+        As time goes on, you will begin to notice changes in your physical fitness.
+        <b>Fitness isn’t gaged by appearance either — remember that.</b> Don’t evaluate your fitness based on how you look.
+        Rather, base your fitness off of how you feel and the difficulty of your workouts.
+    </p>
+    <p>
+        If initially you are only able to run one mile, but a few weeks later you’re able to run two or three miles, you
+        have made progress and are in better shape. Appearance doesn’t determine success.
+    </p>
+    <h3>Let's move on to Step Two</h3>
+    <form th:action="@{/steps/second}">
+        <button type="submit" class="stepsButton">Step Two</button>
+    </form>
+
+    <p>
+        Content taken from <a th:href="@{https://medium.com/in-fitness-and-in-health/how-to-get-fit-in-3-easy-steps-d5d0eb497527}">here</a>
+        and <a th:href="@{https://www.verywellfamily.com/thmb/80lfPGxuqo7hKex0XGhoVLcaNAY=/614x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/x-on-calendar-jeffrey-coolidge-the-image-bank-getty-images-56a6fa2b5f9b58b7d0e5ce64.jpg}">here</a>
+    </p>
+</div>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>3 Steps to Get Fit</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<div class="mid">
+    <h2>How to get Fit in 3 Easy steps</h2>
+    <h3>And no, it's not just working out endlessly</h3>
+
+    <img th:src="@{/img/Stretching.jpg}" alt="Stretching">
+
+    <p>
+    It’s important to make better habits to enhance your quality of life, and getting in better shape is one way to achieve longevity.
+    Fitness depends on a number of factors and varies for every person, but it’s important that you maintain an active lifestyle.
+    </p>
+    <h3>Getting fit can be done in 3 easy steps, lets start at step one</h3>
+    <form th:action="@{/steps/first}">
+        <button type="submit" class="stepsButton">Get Started</button>
+    </form>
+
+    <p>
+    Content taken from <a th:href="@{https://medium.com/in-fitness-and-in-health/how-to-get-fit-in-3-easy-steps-d5d0eb497527}">here</a>, <a th:href="@{https://blog.nasm.org/the-benefits-of-stretching}">here</a>,
+    and <a th:href="@{https://www.istockphoto.com/vector/dumbbell-pixel-art-illustration-gm1170051220-323648040}">here</a>
+    </p>
+</div>
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

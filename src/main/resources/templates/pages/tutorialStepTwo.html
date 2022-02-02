@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step Two</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<div class="mid">
+    <h2>Step Two</h2>
+    <h3>Find a Workout Buddy</h3>
+
+    <img th:src="@{/img/Friends.jpg}" alt="Workout Buddy">
+
+    <p>
+        Working out can be a pain at times, especially if you have difficulty keeping yourself accountable for working
+        out. If you don’t have a trainer or fitness instructor pushing you to workout, then I highly recommend finding
+        someone to workout with.
+    </p>
+    <p>
+        Having a workout buddy will help you keep each other accountable for working out. You’re more likely to push
+        yourself harder during the workout if you have someone working out with you that has similar goals as yourself.
+    </p>
+
+    <h3>One more step!</h3>
+    <form th:action="@{/steps/third}">
+        <button type="submit" class="stepsButton">Step Three</button>
+    </form>
+
+    <p>
+        Content taken from <a th:href="@{https://medium.com/in-fitness-and-in-health/how-to-get-fit-in-3-easy-steps-d5d0eb497527}">here</a>
+        and <a th:href="@{https://einsteinperspectives.com/why-work-out-with-a-friend/}">here</a>
+    </p>
+</div>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

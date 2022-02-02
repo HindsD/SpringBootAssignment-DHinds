@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step Three</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<div class="mid">
+    <h2>Step Three</h2>
+    <h3>Set Attainable Goals</h3>
+
+    <img th:src="@{/img/Goals.jpeg}" alt="Goals">
+
+    <p>
+        Setting attainable goals for yourself is one of the most important pieces of advice I can give to you.
+        Everyone has their own level of fitness that they want to achieve.
+    </p>
+    <p>
+        If you’re trying to get fit, know that your goals are different than someone else’s. Make goals that are
+        suitable for your needs and that are attainable. If you make goals that are highly improbable, you’ll end up
+        being disappointed with the outcome.
+    </p>
+    <p>
+        A goal of yours can be as simple as feeling better during a workout. It doesn’t have to be drastic by any
+        means, but if you make goals that are attainable, if will feel amazing when you accomplish them.
+    </p>
+
+    <h3>You did it!</h3>
+    <form th:action="@{/}">
+        <button type="submit" class="stepsButton">Head Home</button>
+    </form>
+
+    <p>
+        Content taken from <a th:href="@{https://medium.com/in-fitness-and-in-health/how-to-get-fit-in-3-easy-steps-d5d0eb497527}">here</a>
+        and <a th:href="@{https://lattice.com/library/how-to-write-goals-the-s-m-a-r-t-way}">here</a>
+    </p>
+</div>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

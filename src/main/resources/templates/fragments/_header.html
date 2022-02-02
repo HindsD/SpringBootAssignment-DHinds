@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<body>
+<header th:fragment="header">
+    <div id="logo">
+        <a th:href="@{/}"><img th:src="@{/img/dumbbell.jpg}"/></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/steps/first}">Step One</a></li>
+            <li><a th:href="@{/steps/second}">Step Two</a></li>
+            <li><a th:href="@{/steps/third}">Step Three</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
